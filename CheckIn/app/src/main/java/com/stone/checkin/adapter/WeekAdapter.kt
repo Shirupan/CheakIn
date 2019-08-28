@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.stone.checkin.R
-import kotlinx.android.synthetic.main.item_gv.view.*
+import kotlinx.android.synthetic.main.item_date_gv.view.*
 
 /**
  * @Description:
@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.item_gv.view.*
 
 class WeekAdapter(val context: Context) : BaseAdapter() {
 
-    private val week = arrayOf("日", "一", "二", "三", "四", "五", "六")
+    private val week = context.resources.getStringArray(R.array.weeks)
 
     override fun getCount(): Int {
         return week.size
@@ -36,7 +36,7 @@ class WeekAdapter(val context: Context) : BaseAdapter() {
         var root = view
         val viewHolder: ViewHolder
         if (root == null) {
-            root = LayoutInflater.from(context).inflate(R.layout.item_gv, null)
+            root = LayoutInflater.from(context).inflate(R.layout.item_date_gv, null)
             viewHolder = ViewHolder()
             root!!.tag = viewHolder
         } else {

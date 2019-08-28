@@ -3,14 +3,14 @@ package com.stone.checkin.widget
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
-import android.widget.GridView
 import android.widget.LinearLayout
-import android.widget.TextView
 import com.stone.checkin.R
 import com.stone.checkin.adapter.DateAdapter
 import com.stone.checkin.adapter.WeekAdapter
 import com.stone.checkin.until.DateUtil
-import kotlinx.android.synthetic.main.layout_signdate.view.*
+import kotlinx.android.synthetic.main.view_check_in.view.*
+
+
 
 /**
  * @Description:    自定义签到控件
@@ -22,20 +22,24 @@ class CheckInView : LinearLayout {
 
     private var adapterDate: DateAdapter? = null
 
-    constructor(context: Context, checkColor: Int? = R.color.checkColor, unCheckColor: Int? = R.color.unCheckColor) : super(context) {
+    constructor(context: Context, checkColor: Int ? = R.color.checkColor, unCheckColor: Int ? = R.color.unCheckColor) : super(context) {
         init(checkColor!!, unCheckColor!!)
     }
 
-//    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
-//        init()
-//    }
-//
-//    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-//        init()
-//    }
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.CheckInView)
+        init(typedArray.getColor(R.styleable.CheckInView_checkColor, resources.getColor(R.color.checkColor))
+            , typedArray.getColor(R.styleable.CheckInView_unCheckColor, resources.getColor(R.color.unCheckColor)))
+    }
 
-    private fun init(checkColor: Int , unCheckColor: Int) {
-        val view = View.inflate(context, R.layout.layout_signdate, this)
+    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
+        val typedArray = context.obtainStyledAttributes(attrs, R.styleable.CheckInView)
+        init(typedArray.getColor(R.styleable.CheckInView_checkColor, resources.getColor(R.color.checkColor))
+            , typedArray.getColor(R.styleable.CheckInView_unCheckColor, resources.getColor(R.color.unCheckColor)))
+    }
+
+    private fun init(checkColor: Int, unCheckColor: Int) {
+        val view = View.inflate(context, R.layout.view_check_in, this)
         view.tvYear?.text = DateUtil.currentYearAndMonth()
         view.gvWeek?.adapter = WeekAdapter(context)
         adapterDate = DateAdapter(context, checkColor, unCheckColor)

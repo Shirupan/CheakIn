@@ -3,6 +3,8 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="checkColor">#FD00ff</color>
-    <color name="unCheckColor">#6666ff</color>
+    <color name="checkColor">#FD0000</color>
+    <color name="unCheckColor">#666666</color>
+    <color name="testCheckColor">#00574B</color>
+    <color name="testUnCheckColor">#D81B60</color>
 </resources>

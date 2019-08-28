@@ -1,7 +1,6 @@
 package com.stone.checkin.adapter
 
 import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,7 @@ import android.widget.*
 import com.stone.checkin.R
 import com.stone.checkin.until.DateUtil
 import com.stone.checkin.widget.CheckInLinstener
-import kotlinx.android.synthetic.main.item_gv.view.*
+import kotlinx.android.synthetic.main.item_date_gv.view.*
 import java.util.ArrayList
 
 /**
@@ -57,7 +56,7 @@ class DateAdapter(
         var root = view
         val viewHolder: ViewHolder
         if (root == null) {
-            root = LayoutInflater.from(context).inflate(R.layout.item_gv, null)
+            root = LayoutInflater.from(context).inflate(R.layout.item_date_gv, null)
             viewHolder = ViewHolder()
             root!!.tag = viewHolder
         } else {

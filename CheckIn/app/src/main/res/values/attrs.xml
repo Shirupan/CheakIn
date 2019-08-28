@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CheckInView" >
+        <!--已签到颜色-->
+        <attr name="checkColor" format="color" />
+        <!--未签到颜色-->
+        <attr name="unCheckColor" format="color" />
+    </declare-styleable>
+</resources>
