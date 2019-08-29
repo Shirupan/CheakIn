@@ -10,7 +10,7 @@ import com.stone.checkin.R
 import kotlinx.android.synthetic.main.item_date_gv.view.*
 
 /**
- * @Description:
+ * @Description:    星期适配器
  * @Author:         Stone
  * @CreateDate:     2019/8/28 14:39
  * @UpdateDate:     2019/8/28 14:39

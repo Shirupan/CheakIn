@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.item_date_gv.view.*
 import java.util.ArrayList
 
 /**
- * @Description:
+ * @Description:    日期适配器
  * @Author:         Stone
  * @CreateDate:     2019/8/28 14:39
  * @UpdateDate:     2019/8/28 14:39
