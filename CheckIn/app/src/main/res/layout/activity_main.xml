@@ -10,7 +10,7 @@
             android:id="@+id/checkIn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:checkColor="#006"
+            app:checkColor="#f00"
             app:unCheckColor="#ab5"
             app:titleTextColor="#fff"
             app:titleBgColor="#000"

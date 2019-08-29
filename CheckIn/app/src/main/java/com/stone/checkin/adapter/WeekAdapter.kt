@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.item_date_gv.view.*
  * @UpdateDate:     2019/8/28 14:39
  */
 
-class WeekAdapter(val context: Context, val week:Array<String>) : BaseAdapter() {
+class WeekAdapter(val context: Context, val week:Array<String>, val textColor:Int) : BaseAdapter() {
 
     override fun getCount(): Int {
         return week.size
@@ -42,6 +42,7 @@ class WeekAdapter(val context: Context, val week:Array<String>) : BaseAdapter() 
         }
         viewHolder.tv = root.tvWeek
         viewHolder.tv?.text = week[i]
+        viewHolder.tv?.setTextColor(textColor)
         return root
     }
 

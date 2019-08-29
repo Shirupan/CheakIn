@@ -61,7 +61,7 @@ class CheckInView : LinearLayout {
         view.tvYear.setTextColor(titleTextColor)
         view.tvYear.setBackgroundColor(titleBgColor)
 
-        view.gvWeek.adapter = WeekAdapter(context, week)
+        view.gvWeek.adapter = WeekAdapter(context, week, unCheckColor)
 
         adapterDate = DateAdapter(context, checkColor, unCheckColor)
         view.gvDate.adapter = adapterDate
