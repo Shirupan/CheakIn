@@ -16,9 +16,7 @@ import kotlinx.android.synthetic.main.item_date_gv.view.*
  * @UpdateDate:     2019/8/28 14:39
  */
 
-class WeekAdapter(val context: Context) : BaseAdapter() {
-
-    private val week = context.resources.getStringArray(R.array.weeks)
+class WeekAdapter(val context: Context, val week:Array<String>) : BaseAdapter() {
 
     override fun getCount(): Int {
         return week.size

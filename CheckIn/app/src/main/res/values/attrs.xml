@@ -5,5 +5,9 @@
         <attr name="checkColor" format="color" />
         <!--未签到颜色-->
         <attr name="unCheckColor" format="color" />
+        <!--标题文字颜色-->
+        <attr name="titleTextColor" format="color" />
+        <!--标题背景颜色-->
+        <attr name="titleBgColor" format="color" />
     </declare-styleable>
 </resources>

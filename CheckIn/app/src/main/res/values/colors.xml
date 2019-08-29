@@ -5,6 +5,6 @@
     <color name="colorAccent">#D81B60</color>
     <color name="checkColor">#FD0000</color>
     <color name="unCheckColor">#666666</color>
-    <color name="testCheckColor">#00574B</color>
-    <color name="testUnCheckColor">#D81B60</color>
+    <color name="titleTextColor">@android:color/white</color>
+    <color name="titleBgColor">@color/colorAccent</color>
 </resources>
