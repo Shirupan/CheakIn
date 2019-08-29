@@ -48,6 +48,20 @@ class DateAdapter(
         }
     }
 
+    fun setCheak(day: Int){
+        //有效日期为(DateUtil.firstDayOfMonth()-1）开始，对应当月1日
+        val item = days[DateUtil.firstDayOfMonth() - 2 + day]
+            if(item.day == day){
+                if(item.isCheak!!){
+                    linstener?.onChecked()
+                }else{
+                    item.isCheak = true
+                    linstener?.onSuccess()
+                }
+
+            }
+    }
+
     override fun getCount(): Int {
         return days.size
     }
@@ -85,15 +99,7 @@ class DateAdapter(
             viewHolder.tv?.setTextColor(unCheakColor)
             viewHolder.ivStatus?.visibility = View.GONE
         }
-//        root.setOnClickListener {
-//            if (days[i].isCheak) {
-//                linstener?.onChecked()
-//            } else {
-//                days[i].isCheak = true
-//                notifyDataSetChanged()
-//                linstener?.onSuccess()
-//            }
-//        }
+
         return root
     }
 

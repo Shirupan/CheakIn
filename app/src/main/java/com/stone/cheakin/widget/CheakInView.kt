@@ -79,12 +79,21 @@ class CheckInView : LinearLayout {
      * 初始化签到日期
      * @param cheakDays 传入对应当月已签到的号数
      */
-    fun setCheakDays(cheakDays: ArrayList<Int>) {
+    fun initCheakDays(cheakDays: ArrayList<Int>) {
         val al = ArrayList<Boolean>()//下标对应号数，1-31号，忽视下标0
         for (i in 0..DateUtil.currentMonthLastDay())al.add(false)
         for(item in cheakDays) al[item] = true
         adapterDate?.setCheakDays(al)
         adapterDate?.notifyDataSetChanged()
+    }
+
+    fun cheakInDays(day :Int){
+        adapterDate?.setCheak(day)
+        adapterDate?.notifyDataSetChanged()
+    }
+
+    fun cheakInToday(){
+        cheakInDays(DateUtil.currentDay())
     }
 }
 

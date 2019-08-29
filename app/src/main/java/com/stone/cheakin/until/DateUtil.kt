@@ -32,5 +32,10 @@ class DateUtil {
             a.set(Calendar.DAY_OF_MONTH, 1)
             return a.get(Calendar.DAY_OF_WEEK)
         }
+
+        fun currentDay(): Int{
+            val a = Calendar.getInstance()
+            return a.get(Calendar.DAY_OF_MONTH)
+        }
     }
 }
