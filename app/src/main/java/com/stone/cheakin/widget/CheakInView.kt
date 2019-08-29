@@ -98,6 +98,6 @@ class CheckInView : LinearLayout {
 }
 
 interface CheakInLinstener {
-    fun onSuccess()
-    fun onChecked()
+    fun onSuccess(day: Int)//签到成功
+    fun onChecked(day: Int)
 }
