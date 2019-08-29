@@ -1,4 +1,4 @@
-package com.stone.checkin
+package com.stone.cheakin
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

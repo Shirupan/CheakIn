@@ -20,6 +20,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    android.libraryVariants.all { variant ->
+        variant.outputs.all {
+            def fileName = "WidgetCheakIn"
+            def type = variant.buildType.name
+            if (type.equals('release')) {
+//                outputFileName = fileName + "-" + variant.productFlavors[0].name + "-" + variant.productFlavors[0].versionName + ".aar"
+            } else if (type.equals('debug')) {
+                outputFileName = fileName + new Date().format("-YYYYMMdd-HHmmss") + ".aar"
+            }
+        }
+    }
 }
 
 dependencies {

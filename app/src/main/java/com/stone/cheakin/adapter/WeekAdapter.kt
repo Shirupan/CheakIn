@@ -1,4 +1,4 @@
-package com.stone.checkin.adapter
+package com.stone.cheakin.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
-import com.stone.checkin.R
+import com.stone.cheakin.R
 import kotlinx.android.synthetic.main.item_date_gv.view.*
 
 /**

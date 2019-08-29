@@ -1,4 +1,4 @@
-package com.stone.checkin
+package com.stone.cheakin
 
 import org.junit.Test
 

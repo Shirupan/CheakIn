@@ -2,9 +2,9 @@
 <resources>
     <declare-styleable name="CheckInView" >
         <!--已签到颜色-->
-        <attr name="checkColor" format="color" />
+        <attr name="cheakColor" format="color" />
         <!--未签到颜色-->
-        <attr name="unCheckColor" format="color" />
+        <attr name="unCheakColor" format="color" />
         <!--标题文字颜色-->
         <attr name="titleTextColor" format="color" />
         <!--标题背景颜色-->

@@ -1,4 +1,4 @@
-package com.stone.checkin.until
+package com.stone.cheakin.until
 
 import java.util.*
 
