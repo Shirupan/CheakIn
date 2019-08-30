@@ -3,5 +3,5 @@ android日历签到控件
 
 implementation 'com.github.Shirupan:CheakIn:1.0.0'
 
- ![avatar](E:\qqmsg\429379083\FileRecv\MobileFile\cheakin.png)
- ![avatar](http://baidu.com/pic/doge.png)
+ ![](./cheakin.png)
+ ![](https://github.com/Shirupan/CheakIn/blob/master/cheakin.png)
